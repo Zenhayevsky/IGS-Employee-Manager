@@ -15,11 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.http import HttpResponse
-
-def employeeslist(request):
-    if request.method == 'GET':
-        return HttpResponse('ok!')
+from employeesmanagement.employeeslist.views import employeeslist
 
 urlpatterns = [
     path('admin/', admin.site.urls),
