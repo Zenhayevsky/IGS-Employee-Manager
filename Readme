@@ -2,19 +2,20 @@
 
 simple application developed with the aim of demonstrating some of django's tools
 
-1 - Instalar as referencias
-```
-pip install -r requirements.txt
-
-```
-2 - Instale ambiente virtual
+1 - Instale ambiente virtual
 
 Se no windows:
 ```
 python -m venv .venv
 ```
 
-3 - Ativar ambiente virtual
+2 - Ativar ambiente virtual
 ```
 env\Scripts\activate
+
+3 - Instalar as referencias
+```
+pip install -r requirements.txt
+
+```
 ```
