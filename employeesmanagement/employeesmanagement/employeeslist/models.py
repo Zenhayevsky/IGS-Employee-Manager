@@ -8,3 +8,6 @@ class employee(models.Model):
 
     class Meta: 
         db_table = 'employeesM'
+
+    def __str__(self):
+        return self.name
