@@ -1,21 +1,72 @@
 ## employeesManagement
 
-simple application developed with the aim of demonstrating some of django's tools
+simple application developed with the aim of demonstrating some of django's tools.
 
-1 - Instale ambiente virtual
+The application has two URLS to be accessed:
 
-Se no windows:
+     1 - administration url to manage employee and department data: 
+         http://127.0.0.1:8000/admin/
+
+         You will need login and password.
+         
+         login = EMadmin
+         password = admin739
+
+    2 - Api Root:
+        http://127.0.0.1:8000/
+
+        Attention: To make PUT and DELETE calls you will need the registration number.
+
+        http://127.0.0.1:8000/employeeslist/{id}/
+
+        Departments can only be edited or deleted in admin mode for security.
+
+as a basic requirement, python must be installed to follow the steps below:
+
+## 1 Install virtual environment
+
+In the main folder of the project 'employeesManagement'
+if windows:
 ```
 python -m venv .venv
 ```
 
-2 - Ativar ambiente virtual
+## 2 Activate virtual environment
+
+In the main folder of the project 'employeesManagement'
+If windows: 
 ```
 env\Scripts\activate
+```
 
-3 - Instalar as referencias
+If linux: 
+```
+source nome_da_virtualenv/bin/activate
+```
+
+## 3 Install the dependencies
+
 ```
 pip install -r requirements.txt
 
 ```
+
+## 4 Run the project
+
+Get to folder employeesmanagement
+( employeesManagement\employeesmanagement )
+
+and run
+
+```
+python manage.py runserver
+
+```
+The project will be running at http://127.0.0.1:8000/
+
+## 6 To disable virtual environment
+
+```
+deactivate
+
 ```
