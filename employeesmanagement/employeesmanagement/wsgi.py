@@ -1,5 +1,5 @@
 """
-WSGI config for employeesmanagement project.
+WSGI config for IGS-Employee-Manager project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
